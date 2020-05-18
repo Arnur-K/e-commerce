@@ -7,9 +7,10 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arnur Kupanov",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.3"
   }
