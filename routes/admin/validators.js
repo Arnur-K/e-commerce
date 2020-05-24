@@ -11,12 +11,14 @@ module.exports = {
             const existingUser = await usersRepo.getOneBy({ email });
             if (existingUser)
                 throw new Error(`${email} is in use`);
-        }),
+        })
+    ,
 
     requirePassword: check('password')
         .trim()
         .isLength({ min: 4, max: 20 })
-        .withMessage('Must be between 4 and 20 charachters'),
+        .withMessage('Must be between 4 and 20 charachters')
+    ,
 
     requirePasswordConfirmation: check('passwordConfirmation')
         .trim()

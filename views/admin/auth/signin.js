@@ -5,8 +5,8 @@ module.exports = () => {
         content: `
             <div>
                 <form method="POST">
-                    <input type="email" name="email" placeholder="email" />
-                    <input type="password" name="password" placeholder="password" />
+                    <input name="email" placeholder="email" />
+                    <input name="password" placeholder="password" />
                     <button>Sign in</button>
                 </form>
             </div>
